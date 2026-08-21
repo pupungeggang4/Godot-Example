@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://clvnvnnikiem3"]
+
+[ext_resource type="Texture2D" uid="uid://dd60mohw0sb0p" path="res://asset/image/rock.png" id="1_tis70"]
+
+[node name="Rock" type="Node2D" unique_id=1337366183]
+
+[node name="Rock" type="Sprite2D" parent="." unique_id=958147780]
+texture = ExtResource("1_tis70")
+centered = false

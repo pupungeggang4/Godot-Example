@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://unfhrnknrujk"]
+
+[ext_resource type="Texture2D" uid="uid://dtcel0dt1l1iq" path="res://asset/image/goal_off.png" id="1_gdpna"]
+[ext_resource type="Texture2D" uid="uid://dm7hwfdijtv7p" path="res://asset/image/goal_on.png" id="2_308o3"]
+
+[node name="Goal" type="Node2D" unique_id=1213325805]
+
+[node name="GoalOff" type="Sprite2D" parent="." unique_id=238983103]
+texture = ExtResource("1_gdpna")
+centered = false
+
+[node name="GoalOn" type="Sprite2D" parent="." unique_id=893816501]
+texture = ExtResource("2_308o3")
+centered = false
