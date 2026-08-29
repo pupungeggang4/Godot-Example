@@ -1,0 +1,25 @@
+[gd_scene format=4 uid="uid://bf87q3kw85m3"]
+
+[ext_resource type="Script" uid="uid://3yhbow54ldfy" path="res://scene.gd" id="1_nxogm"]
+[ext_resource type="TileSet" uid="uid://cuqqe4lpvuai2" path="res://res/tile_set.tres" id="1_ulcgi"]
+[ext_resource type="FontFile" uid="uid://bdd2dha0a3n7l" path="res://asset/neodgm.ttf" id="2_u3cyc"]
+[ext_resource type="Script" uid="uid://turr40o3jnaq" path="res://tile_map_layer.gd" id="3_3253y"]
+
+[node name="Scene" type="Node2D" unique_id=153995531]
+script = ExtResource("1_nxogm")
+
+[node name="Label" type="Label" parent="." unique_id=1064641944]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 44.0
+offset_bottom = 27.0
+theme_override_fonts/font = ExtResource("2_u3cyc")
+theme_override_font_sizes/font_size = 32
+text = "0"
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1689520545 node_paths=PackedStringArray("label")]
+position = Vector2(120, 20)
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAIAAAAAAAAAAAABAAMAAAAAAAAAAAABAAQAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAYAAAAAAAAAAAABAAYAAAAAAAAAAAACAAYAAAAAAAAAAAADAAYAAAAAAAAAAAAEAAYAAAAAAAAAAAAFAAYAAAAAAAAAAAAGAAYAAAAAAAAAAAAGAAUAAAAAAAAAAAAGAAQAAAAAAAAAAAAGAAMAAAAAAAAAAAAGAAIAAAAAAAAAAAAGAAEAAAAAAAAAAAAGAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAADAAAAAAAAAAAAAAACAAAAAAAAAAAAAAABAAAAAAAAAAAAAAABAAEAAAAAAAAAAAACAAEAAAAAAAAAAAADAAEAAAAAAAAAAAAEAAEAAAAAAAAAAAAFAAEAAAAAAAAAAAAFAAQAAAAAAAAAAAAFAAUAAAAAAAAAAAAEAAUAAAAAAAAAAAADAAUAAAAAAAAAAAACAAUAAAAAAAAAAAABAAUAAAAAAAAAAAACAAQAAAAAAAAAAAADAAQAAAAAAAAAAAAEAAQAAAAAAAAAAAAFAAMAAAAAAAAAAAAFAAIAAAAAAAAAAAAEAAIAAAAAAAAAAAADAAMAAAAAAAAAAAACAAMAAAAAAAAAAAACAAIAAAAAAAAAAAAEAAMAAAAAAAAAAAADAAIAAAAAAAAAAAA=")
+tile_set = ExtResource("1_ulcgi")
+script = ExtResource("3_3253y")
+label = NodePath("../Label")
