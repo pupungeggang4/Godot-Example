@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://cg4rqhrgsk6w1"]
 
+[ext_resource type="PackedScene" uid="uid://dqg7ujk3cyej6" path="res://scene/subscene/menu.tscn" id="1_meen0"]
+
 [node name="Puzzle" type="Node2D" unique_id=1634502022]
+
+[node name="Menu" parent="." unique_id=599119031 instance=ExtResource("1_meen0")]

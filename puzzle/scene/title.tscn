@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://idflbtcxnjq8"]
+
+[ext_resource type="Theme" uid="uid://bag41teqvq2ja" path="res://resource/font.tres" id="1_4fdtc"]
+[ext_resource type="Script" uid="uid://crjuvvbfnbyc2" path="res://script/title.gd" id="1_hr6ky"]
+
+[node name="Title" type="Node2D" unique_id=784812795]
+script = ExtResource("1_hr6ky")
+
+[node name="Start" type="Button" parent="." unique_id=1101284712]
+offset_left = 80.0
+offset_top = 160.0
+offset_right = 720.0
+offset_bottom = 240.0
+theme = ExtResource("1_4fdtc")
+theme_override_font_sizes/font_size = 32
+text = "Start Game"
+
+[node name="Quit" type="Button" parent="." unique_id=1884247045]
+offset_left = 80.0
+offset_top = 240.0
+offset_right = 720.0
+offset_bottom = 320.0
+theme = ExtResource("1_4fdtc")
+theme_override_font_sizes/font_size = 32
+text = "Quit Game"
+
+[node name="ButtonDown" type="Button" parent="." unique_id=425109073]
+offset_left = 80.0
+offset_top = 400.0
+offset_right = 160.0
+offset_bottom = 480.0
+theme = ExtResource("1_4fdtc")
+theme_override_font_sizes/font_size = 32
+text = "<"
+
+[node name="ButtonUp" type="Button" parent="." unique_id=1596770568]
+offset_left = 640.0
+offset_top = 400.0
+offset_right = 720.0
+offset_bottom = 480.0
+theme = ExtResource("1_4fdtc")
+theme_override_font_sizes/font_size = 32
+text = ">"
+
+[node name="TextTitle" type="Label" parent="." unique_id=1567102550]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 196.0
+offset_bottom = 52.0
+theme = ExtResource("1_4fdtc")
+theme_override_font_sizes/font_size = 32
+text = "Puzzle Game"
+
+[node name="TextLevel" type="Label" parent="." unique_id=1698079625]
+offset_top = 320.0
+offset_right = 800.0
+offset_bottom = 400.0
+theme = ExtResource("1_4fdtc")
+theme_override_font_sizes/font_size = 32
+text = "Select Level"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextLevelNum" type="Label" parent="." unique_id=106334866]
+offset_left = 160.0
+offset_top = 400.0
+offset_right = 640.0
+offset_bottom = 480.0
+theme = ExtResource("1_4fdtc")
+theme_override_font_sizes/font_size = 32
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="button_up" from="Start" to="." method="_on_start_button_up"]
+[connection signal="button_up" from="Quit" to="." method="_on_quit_button_up"]
+[connection signal="button_up" from="ButtonDown" to="." method="_on_button_down_button_up"]
+[connection signal="button_up" from="ButtonUp" to="." method="_on_button_up_button_up"]
