@@ -15,12 +15,15 @@ run/main_scene="uid://idflbtcxnjq8"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GVar="*uid://4rycudf2467i"
+
 [display]
 
 window/size/viewport_width=800
 window/size/viewport_height=600
 window/stretch/mode="viewport"
-window/stretch/aspect="expand"
 
 [physics]
 

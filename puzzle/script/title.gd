@@ -16,6 +16,7 @@ func _on_button_up_button_up() -> void:
     selected_level = min(selected_level + 1, 10)
 
 func _on_start_button_up() -> void:
+    GVar.level = selected_level
     get_tree().change_scene_to_file("res://scene/puzzle.tscn")
 
 func _on_quit_button_up() -> void:
