@@ -1,1 +1,2 @@
-extends Node
+extends Entity
+class_name Player

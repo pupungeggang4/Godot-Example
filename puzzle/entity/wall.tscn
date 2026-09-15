@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://cs4yacfkn3c3o"]
 
+[ext_resource type="Script" uid="uid://b816fxxb7xxvg" path="res://script/wall.gd" id="1_8p7lr"]
 [ext_resource type="Texture2D" uid="uid://bxvp2h5ycse41" path="res://asset/image/wall.png" id="1_61h2d"]
 
 [node name="Wall" type="Node2D" unique_id=1288392518]
+script = ExtResource("1_8p7lr")
 
 [node name="Wall" type="Sprite2D" parent="." unique_id=17720458]
 texture = ExtResource("1_61h2d")

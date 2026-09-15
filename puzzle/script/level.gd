@@ -1,5 +1,7 @@
 extends Node2D
 
+var entity_list: Array = []
+
 func _ready() -> void:
     load_level("res://data/level%02d.txt" % [GVar.level])
 
@@ -21,17 +23,31 @@ func load_level(file_name: String) -> void:
                 if celli == 1:
                     node = load("res://entity/wall.tscn").instantiate()
                     node.position = Vector2(40 * j, 40 * i)
+                    node.cell_pos = Vector2i(j, i)
                     add_child(node)
+                    entity_list.append(node)
                 elif celli == 2:
                     node = load("res://entity/player.tscn").instantiate()
                     node.position = Vector2(40 * j, 40 * i)
+                    node.cell_pos = Vector2i(j, i)
                     add_child(node)
+                    entity_list.append(node)
                 elif celli == 3:
                     node = load("res://entity/rock.tscn").instantiate()
                     node.position = Vector2(40 * j, 40 * i)
+                    node.cell_pos = Vector2i(j, i)
                     add_child(node)
+                    entity_list.append(node)
                 elif celli == 4:
                     node = load("res://entity/goal.tscn").instantiate()
                     node.position = Vector2(40 * j, 40 * i)
+                    node.cell_pos = Vector2i(j, i)
                     add_child(node)
+                    entity_list.append(node)
                 $TileMapLayer.set_cell(Vector2i(j, i), 1, Vector2(0, 0))
+    handle_field()
+
+func handle_field() -> void:
+    for i in range(len(entity_list)):
+        if entity_list[i] is Goal:
+            entity_list[i].check_goal(entity_list)
