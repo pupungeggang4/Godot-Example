@@ -1,6 +1,46 @@
 [gd_scene format=3 uid="uid://pdpqxkcq0wql"]
 
 [ext_resource type="Script" uid="uid://dhffi73gmagvc" path="res://script/title.gd" id="1_4fdtc"]
+[ext_resource type="Theme" uid="uid://dkax3qb6puydl" path="res://resource/theme_neodgm.tres" id="2_hr6ky"]
 
 [node name="Title" type="Node2D" unique_id=38338904]
 script = ExtResource("1_4fdtc")
+
+[node name="TextTitle" type="Label" parent="." unique_id=1606870854]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 324.0
+offset_bottom = 52.0
+theme = ExtResource("2_hr6ky")
+text = "Planterguy Survival"
+
+[node name="ButtonStart" type="Button" parent="." unique_id=71425994]
+offset_left = 240.0
+offset_top = 160.0
+offset_right = 1040.0
+offset_bottom = 240.0
+theme = ExtResource("2_hr6ky")
+text = "Start Game"
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonCollection" type="Button" parent="." unique_id=64534057]
+offset_left = 240.0
+offset_top = 240.0
+offset_right = 1040.0
+offset_bottom = 320.0
+theme = ExtResource("2_hr6ky")
+text = "Collection"
+metadata/_edit_use_anchors_ = true
+
+[node name="ButtonQuit" type="Button" parent="." unique_id=710234756]
+offset_left = 240.0
+offset_top = 320.0
+offset_right = 1040.0
+offset_bottom = 400.0
+theme = ExtResource("2_hr6ky")
+text = "Quit Game"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="button_up" from="ButtonStart" to="." method="_on_button_start_button_up"]
+[connection signal="button_up" from="ButtonCollection" to="." method="_on_button_collection_button_up"]
+[connection signal="button_up" from="ButtonQuit" to="." method="_on_button_quit_button_up"]
