@@ -1,3 +1,25 @@
 [gd_scene format=3 uid="uid://bt2qpwojl63xa"]
 
+[ext_resource type="Theme" uid="uid://dkax3qb6puydl" path="res://resource/theme_neodgm.tres" id="1_3rd2l"]
+[ext_resource type="Script" uid="uid://bi5y1dn5a00ij" path="res://script/collection.gd" id="1_xamy5"]
+[ext_resource type="Texture2D" uid="uid://d16iamuhd6e21" path="res://asset/image/back.png" id="2_xamy5"]
+
 [node name="Collection" type="Node2D" unique_id=872647237]
+script = ExtResource("1_xamy5")
+
+[node name="TextTitle" type="Label" parent="." unique_id=1427650265]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 97.0
+offset_bottom = 43.0
+theme = ExtResource("1_3rd2l")
+text = "Collection"
+
+[node name="ButtonBack" type="Button" parent="." unique_id=815117369]
+offset_left = 1180.0
+offset_top = 20.0
+offset_right = 1268.0
+offset_bottom = 108.0
+icon = ExtResource("2_xamy5")
+
+[connection signal="button_up" from="ButtonBack" to="." method="_on_button_back_button_up"]
