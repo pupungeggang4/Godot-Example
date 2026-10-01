@@ -1,5 +1,50 @@
 [gd_scene format=3 uid="uid://b2pmggaft2vqi"]
 
+[ext_resource type="Script" uid="uid://d1h7ebsb4pdgy" path="res://script/window/windowmenu.gd" id="1_3xd1k"]
+[ext_resource type="Theme" uid="uid://dkax3qb6puydl" path="res://resource/theme_neodgm.tres" id="1_cymxe"]
+
 [node name="Windowmenu" type="Control" unique_id=1735722983]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_3xd1k")
+
+[node name="Background" type="ColorRect" parent="." unique_id=921467403]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 200.0
+offset_right = 960.0
+offset_bottom = 520.0
+
+[node name="TextTitle" type="Label" parent="Background" unique_id=1765234556]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 80.0
+theme = ExtResource("1_cymxe")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Paused"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonResume" type="Button" parent="Background" unique_id=695417073]
+layout_mode = 0
+offset_top = 80.0
+offset_right = 640.0
+offset_bottom = 160.0
+theme = ExtResource("1_cymxe")
+text = "Resume"
+
+[node name="ButtonExit" type="Button" parent="Background" unique_id=1124969539]
+layout_mode = 0
+offset_top = 160.0
+offset_right = 640.0
+offset_bottom = 240.0
+theme = ExtResource("1_cymxe")
+text = "Exit to Title"
+
+[node name="ButtonQuit" type="Button" parent="Background" unique_id=934779018]
+layout_mode = 0
+offset_top = 240.0
+offset_right = 640.0
+offset_bottom = 320.0
+theme = ExtResource("1_cymxe")
+text = "Quit Game"

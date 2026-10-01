@@ -15,6 +15,13 @@ offset_bottom = 43.0
 theme = ExtResource("2_jqyrb")
 text = "Select Character"
 
+[node name="TextSelected" type="Label" parent="." unique_id=1646874723]
+offset_left = 800.0
+offset_top = 20.0
+offset_right = 840.0
+offset_bottom = 52.0
+theme = ExtResource("2_jqyrb")
+
 [node name="ButtonBack" type="Button" parent="." unique_id=1364310872]
 offset_left = 1180.0
 offset_top = 20.0
@@ -22,4 +29,19 @@ offset_right = 1260.0
 offset_bottom = 100.0
 icon = ExtResource("3_c4b18")
 
+[node name="ButtonStart" type="Button" parent="." unique_id=924920396]
+offset_left = 1100.0
+offset_top = 620.0
+offset_right = 1260.0
+offset_bottom = 700.0
+theme = ExtResource("2_jqyrb")
+text = "Start"
+
+[node name="ButtonCharacters" type="Control" parent="." unique_id=132612966]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [connection signal="button_up" from="ButtonBack" to="." method="_on_button_back_button_up"]
+[connection signal="button_up" from="ButtonStart" to="." method="_on_button_start_button_up"]

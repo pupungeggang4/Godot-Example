@@ -4,3 +4,9 @@
 
 [node name="Battle" type="Node2D" unique_id=1865241267]
 script = ExtResource("1_afp2b")
+
+[node name="ButtonMenu" type="Button" parent="." unique_id=907653680]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[connection signal="button_up" from="ButtonMenu" to="." method="_on_button_menu_button_up"]
