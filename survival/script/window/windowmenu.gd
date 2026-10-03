@@ -1,11 +1,19 @@
 extends Control
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-    pass # Replace with function body.
+    pass
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
     pass
+
+func _on_button_resume_button_up() -> void:
+    GVar.menu = false
+    hide()
+    
+func _on_button_exit_button_up() -> void:
+    GVar.menu = false
+    hide()
+    get_tree().change_scene_to_file("res://scene/title.tscn")
+
+func _on_button_quit_button_up() -> void:
+    get_tree().quit()

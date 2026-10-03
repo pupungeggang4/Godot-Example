@@ -1,12 +1,32 @@
 [gd_scene format=3 uid="uid://d3f24qvcjjxxy"]
 
 [ext_resource type="Script" uid="uid://dxbq6owj8h3kt" path="res://script/battle.gd" id="1_afp2b"]
+[ext_resource type="PackedScene" uid="uid://brbyqc7vlc4p8" path="res://entity/player.tscn" id="2_0okv5"]
+[ext_resource type="PackedScene" uid="uid://b2pmggaft2vqi" path="res://scene/window/windowmenu.tscn" id="2_ffp3s"]
+[ext_resource type="Texture2D" uid="uid://d16iamuhd6e21" path="res://asset/image/back.png" id="2_soyo5"]
 
 [node name="Battle" type="Node2D" unique_id=1865241267]
 script = ExtResource("1_afp2b")
 
+[node name="Field" type="Node2D" parent="." unique_id=1119695198]
+
+[node name="Player" parent="Field" unique_id=1012442660 instance=ExtResource("2_0okv5")]
+position = Vector2(428, 509)
+
+[node name="Hand" type="Control" parent="." unique_id=852901962]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [node name="ButtonMenu" type="Button" parent="." unique_id=907653680]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 1180.0
+offset_top = 20.0
+offset_right = 1268.0
+offset_bottom = 108.0
+icon = ExtResource("2_soyo5")
+
+[node name="Windowmenu" parent="." unique_id=1735722983 instance=ExtResource("2_ffp3s")]
+visible = false
 
 [connection signal="button_up" from="ButtonMenu" to="." method="_on_button_menu_button_up"]

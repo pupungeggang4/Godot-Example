@@ -9,5 +9,7 @@ func _process(delta: float) -> void:
 func _on_button_menu_button_up() -> void:
     if GVar.menu == false:
         GVar.menu = true
+        $Windowmenu.show()
     else:
         GVar.menu = false
+        $Windowmenu.hide()

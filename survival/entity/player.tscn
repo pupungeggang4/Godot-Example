@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://brbyqc7vlc4p8"]
 
 [ext_resource type="Script" uid="uid://dfxmgejfa3sfx" path="res://script/entity/player.gd" id="1_hsefk"]
+[ext_resource type="Texture2D" uid="uid://w6r1skw3nltc" path="res://icon.svg" id="2_xlvtu"]
 
 [node name="Player" type="Node2D" unique_id=1012442660]
 script = ExtResource("1_hsefk")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2103613169]
+texture = ExtResource("2_xlvtu")

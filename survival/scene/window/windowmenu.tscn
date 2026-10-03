@@ -48,3 +48,7 @@ offset_right = 640.0
 offset_bottom = 320.0
 theme = ExtResource("1_cymxe")
 text = "Quit Game"
+
+[connection signal="button_up" from="Background/ButtonResume" to="." method="_on_button_resume_button_up"]
+[connection signal="button_up" from="Background/ButtonExit" to="." method="_on_button_exit_button_up"]
+[connection signal="button_up" from="Background/ButtonQuit" to="." method="_on_button_quit_button_up"]
