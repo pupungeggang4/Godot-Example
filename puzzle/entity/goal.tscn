@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://unfhrnknrujk"]
 
-[ext_resource type="Script" uid="uid://4e3tb3avvwb4" path="res://script/goal.gd" id="1_308o3"]
+[ext_resource type="Script" uid="uid://4e3tb3avvwb4" path="res://script/entity/goal.gd" id="1_308o3"]
 [ext_resource type="Texture2D" uid="uid://dtcel0dt1l1iq" path="res://asset/image/goal_off.png" id="1_gdpna"]
 [ext_resource type="Texture2D" uid="uid://dm7hwfdijtv7p" path="res://asset/image/goal_on.png" id="2_308o3"]
 

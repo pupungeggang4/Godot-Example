@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://idflbtcxnjq8"]
 
 [ext_resource type="Theme" uid="uid://bag41teqvq2ja" path="res://resource/font.tres" id="1_4fdtc"]
-[ext_resource type="Script" uid="uid://crjuvvbfnbyc2" path="res://script/title.gd" id="1_hr6ky"]
+[ext_resource type="Script" uid="uid://crjuvvbfnbyc2" path="res://script/scene/title.gd" id="1_hr6ky"]
 
 [node name="Title" type="Node2D" unique_id=784812795]
 script = ExtResource("1_hr6ky")

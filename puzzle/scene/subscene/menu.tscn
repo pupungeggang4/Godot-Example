@@ -72,4 +72,7 @@ theme = ExtResource("1_gx41q")
 theme_override_font_sizes/font_size = 32
 text = "Quit Game"
 
+[connection signal="button_up" from="ButtonResume" to="." method="_on_button_resume_button_up"]
+[connection signal="button_up" from="ButtonRestart" to="." method="_on_button_restart_button_up"]
+[connection signal="button_up" from="ButtonTitle" to="." method="_on_button_title_button_up"]
 [connection signal="button_up" from="ButtonQuit" to="." method="_on_button_quit_button_up"]

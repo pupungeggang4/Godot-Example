@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cg4rqhrgsk6w1"]
 
-[ext_resource type="Script" uid="uid://ctrd3l2v0jw2i" path="res://script/puzzle.gd" id="1_f36ja"]
+[ext_resource type="Script" uid="uid://ctrd3l2v0jw2i" path="res://script/scene/puzzle.gd" id="1_f36ja"]
 [ext_resource type="PackedScene" uid="uid://dqg7ujk3cyej6" path="res://scene/subscene/menu.tscn" id="1_meen0"]
 [ext_resource type="PackedScene" uid="uid://b4q2vie84fu58" path="res://entity/level.tscn" id="2_j0p7r"]
 [ext_resource type="Theme" uid="uid://bag41teqvq2ja" path="res://resource/font.tres" id="2_tt8dv"]
@@ -10,7 +10,7 @@ script = ExtResource("1_f36ja")
 
 [node name="Level" parent="." unique_id=1608736569 instance=ExtResource("2_j0p7r")]
 
-[node name="ButtonMenu" type="Button" parent="." unique_id=774982474]
+[node name="ButtonMenu" type="Button" parent="." unique_id=758056538]
 offset_left = 740.0
 offset_top = 20.0
 offset_right = 780.0
@@ -22,4 +22,5 @@ text = "="
 [node name="Menu" parent="." unique_id=599119031 instance=ExtResource("1_meen0")]
 visible = false
 
+[connection signal="button_up" from="ButtonMenu" to="." method="_on_button_button_up"]
 [connection signal="button_up" from="ButtonMenu" to="." method="_on_button_menu_button_up"]

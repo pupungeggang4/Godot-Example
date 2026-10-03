@@ -18,6 +18,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 GVar="*uid://4rycudf2467i"
+Const="*uid://be1lfejdq7xqw"
 
 [display]
 
