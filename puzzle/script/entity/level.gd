@@ -44,6 +44,17 @@ func load_level(file_name: String) -> void:
                     node.cell_pos = Vector2i(j, i)
                     add_child(node)
                     entity_list.append(node)
+                elif celli == 5:
+                    node = load("res://entity/rock.tscn").instantiate()
+                    node.position = Vector2(40 * j, 40 * i)
+                    node.cell_pos = Vector2i(j, i)
+                    add_child(node)
+                    entity_list.append(node)
+                    node = load("res://entity/goal.tscn").instantiate()
+                    node.position = Vector2(40 * j, 40 * i)
+                    node.cell_pos = Vector2i(j, i)
+                    add_child(node)
+                    entity_list.append(node)
                 $TileMapLayer.set_cell(Vector2i(j, i), 1, Vector2(0, 0))
     handle_field()
 

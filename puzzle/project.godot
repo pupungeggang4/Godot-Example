@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GVar="*uid://4rycudf2467i"
 Const="*uid://be1lfejdq7xqw"
+Nodes="*uid://sfteh04lep7x"
 
 [display]
 

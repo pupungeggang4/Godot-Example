@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ctrd3l2v0jw2i" path="res://script/scene/puzzle.gd" id="1_f36ja"]
 [ext_resource type="PackedScene" uid="uid://dqg7ujk3cyej6" path="res://scene/subscene/menu.tscn" id="1_meen0"]
-[ext_resource type="PackedScene" uid="uid://b4q2vie84fu58" path="res://entity/level.tscn" id="2_j0p7r"]
+[ext_resource type="PackedScene" uid="uid://b4q2vie84fu58" path="res://scene/entity/level.tscn" id="2_j0p7r"]
 [ext_resource type="Theme" uid="uid://bag41teqvq2ja" path="res://resource/font.tres" id="2_tt8dv"]
 
 [node name="Puzzle" type="Node2D" unique_id=1634502022]
