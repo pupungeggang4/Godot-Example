@@ -1,11 +1,23 @@
-extends Node
+extends Node2D
 
+@export var speed: float = 240.0
+var direction: Vector2 = Vector2.ZERO
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-    pass # Replace with function body.
+    pass
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+    if GVar.state == GVar.State.NORMAL:
+        move(delta)
+        handle_input()
+
+func move(delta: float) -> void:
+    direction = Vector2.ZERO 
+    for d in GVar.direction:
+        if Input.is_action_pressed(d):
+            direction += GVar.direction[d]
+    direction = direction.normalized()
+    position += direction * speed * delta
+
+func handle_input() -> void:
     pass
